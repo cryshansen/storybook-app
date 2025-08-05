@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luna's Busy Day - Page 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .story-image {
+      max-height: 300px;
+      object-fit: contain;
+    }
+    .word-highlight:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .navigation-buttons {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body class="bg-light text-dark">
+
+  <div class="container py-4">
+    <!-- Top bar -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3>Luna's Busy Day</h3>
+      <select id="languageSelect" class="form-select w-auto">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+      </select>
+    </div>
+
+    <!-- Story Image -->
+    <div class="text-center mb-4">
+      <img src="https://via.placeholder.com/400x300?text=Luna+Wakes+Up" alt="Luna wakes up" class="img-fluid story-image rounded shadow">
+    </div>
+
+    <!-- Story Text -->
+    <div class="bg-white p-4 rounded shadow-sm">
+      <p class="fs-5 text-center">
+        <span class="word-highlight">Luna</span> wakes up.<br>
+        She <span class="word-highlight">stretches</span>.<br>
+        She <span class="word-highlight">hugs</span> Milo.<br>
+        <strong>“Good morning, Milo!”</strong>
+      </p>
+
+      <!-- Audio Controls -->
+      <div class="d-flex justify-content-center my-3">
+        <button class="btn btn-primary me-2" onclick="playFullSentence()">🔊 Hear Full Sentence</button>
+        <button class="btn btn-outline-secondary" onclick="speakWord('Luna')">👂 Tap a Word</button>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="d-flex justify-content-between navigation-buttons">
+      <button class="btn btn-outline-secondary" disabled>◀️ Back</button>
+      <button class="btn btn-success">Next ▶️</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Basic TTS (Text-to-Speech) -->
+  <script>
+    function playFullSentence() {
+      const msg = new SpeechSynthesisUtterance("Luna wakes up. She stretches. She hugs Milo. Good morning, Milo!");
+      msg.lang = document.getElementById('languageSelect').value === 'fr' ? 'fr-FR' : 'en-US';
+      speechSynthesis.speak(msg);
+    }
+
+    function speakWord(word) {
+      const msg = new SpeechSynthesisUtterance(word);
+      msg.lang = document.getElementById('languageSelect').value === 'fr' ? 'fr-FR' : 'en-US';
+      speechSynthesis.speak(msg);
+    }
+
+    // Optional: tap word to speak
+    document.querySelectorAll('.word-highlight').forEach(el => {
+      el.addEventListener('click', () => speakWord(el.innerText));
+    });
+  </script>
+
+</body>
+</html>

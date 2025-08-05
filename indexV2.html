@@ -1,0 +1,104 @@
+// src/stories.json
+[
+  {
+    "id": "morning-routine",
+    "title": "A Day in the Life of Alex",
+    "coverImage": "/images/morning.png",
+    "description": "Follow Alex through a fun-filled day!"
+  },
+  {
+    "id": "bedtime-adventure",
+    "title": "Bedtime Adventure",
+    "coverImage": "/images/bedtime.png",
+    "description": "A cozy bedtime story with magical dreams."
+  }
+]
+
+// src/components/StorySelection.vue
+<template>
+  <div class="container py-4">
+    <h1 class="mb-4">📚 Choose a Story</h1>
+    <div class="row">
+      <div v-for="story in stories" :key="story.id" class="col-md-6 mb-4">
+        <div class="card h-100" @click="goToStory(story.id)" style="cursor: pointer;">
+          <img :src="story.coverImage" class="card-img-top" :alt="story.title">
+          <div class="card-body">
+            <h5 class="card-title">{{ story.title }}</h5>
+            <p class="card-text">{{ story.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+import storiesData from '../stories.json'
+
+const router = useRouter()
+const stories = ref([])
+
+onMounted(() => {
+  stories.value = storiesData
+})
+
+function goToStory(id) {
+  router.push(`/story/${id}`)
+}
+</script>
+
+// src/router/index.js
+import { createRouter, createWebHistory } from 'vue-router'
+import Storybook from '../App.vue'
+import StoryView from '../components/StoryView.vue'
+import StorySelection from '../components/StorySelection.vue'
+
+const routes = [
+  { path: '/', component: StorySelection },
+  { path: '/story/:id', component: StoryView }
+]
+
+export const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+
+// Update App.vue
+<template>
+  <RouterView />
+</template>
+
+<script setup>
+</script>
+
+// Service Worker Precache Update in vite.config.js
+// Inside VitePWA plugin config
+workbox: {
+  globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
+  runtimeCaching: [
+    {
+      urlPattern: /\.json$/,
+      handler: 'CacheFirst',
+      options: {
+        cacheName: 'json-cache',
+        expiration: {
+          maxEntries: 10,
+          maxAgeSeconds: 86400
+        }
+      }
+    },
+    {
+      urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/, 
+      handler: 'CacheFirst',
+      options: {
+        cacheName: 'image-cache',
+        expiration: {
+          maxEntries: 20,
+          maxAgeSeconds: 86400
+        }
+      }
+    }
+  ]
+}

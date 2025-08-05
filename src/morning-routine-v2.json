@@ -1,0 +1,188 @@
+[
+  {
+    "page": 1,
+    "title": "Morning Wake-up",
+    "text": "Luna wakes up. She stretches. She hugs Milo.",
+    "interactions": [
+      {
+        "target": "sun",
+        "action": "tap",
+        "effect": "sun rises and glows"
+      },
+      {
+        "target": "Milo",
+        "action": "tap",
+        "effect": "Milo giggles / squeaks"
+      },
+      {
+        "target": "words",
+        "action": "tap",
+        "effect": "hear word in English or French"
+      },
+      {
+        "target": "sentence",
+        "action": "button",
+        "effect": "hear entire sentence read aloud"
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Breakfast",
+    "text": "Luna eats toast and bananas. Mr. Cat wants some too.",
+    "interactions": [
+      {
+        "target": "food items",
+        "action": "tap",
+        "effect": "voice says their name"
+      },
+      {
+        "target": "Mr. Cat",
+        "action": "tap",
+        "effect": "meows, shakes head at toast"
+      },
+      {
+        "target": "banana",
+        "action": "drag",
+        "effect": "drag to Luna’s mouth"
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "Getting Dressed",
+    "text": "She wears her yellow shirt and red boots.",
+    "interactions": [
+      {
+        "target": "clothes",
+        "action": "tap",
+        "effect": "swap colors or hear names in both languages"
+      },
+      {
+        "target": "Luna",
+        "action": "tap",
+        "effect": "spins around, says “Ready for adventure!”"
+      },
+      {
+        "target": "side panel",
+        "action": "open",
+        "effect": "learn colors"
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "Outside Ladybug",
+    "text": "Luna finds a ladybug.",
+    "interactions": [
+      {
+        "target": "ladybug",
+        "action": "tap",
+        "effect": "crawls across the screen"
+      },
+      {
+        "target": "Luna’s finger",
+        "action": "tap",
+        "effect": "giggles and says “It tickles!”"
+      },
+      {
+        "target": "magnifying glass",
+        "action": "optional",
+        "effect": "zoom in on the bug"
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Blanket Fort",
+    "text": "Luna builds a fort. Mr. Cat naps.",
+    "interactions": [
+      {
+        "target": "blankets",
+        "action": "drag",
+        "effect": "position to build the fort"
+      },
+      {
+        "target": "Mr. Cat",
+        "action": "tap",
+        "effect": "snores softly"
+      },
+      {
+        "target": "Milo",
+        "action": "tap",
+        "effect": "peekaboo animation from inside the fort"
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "Reading Time",
+    "text": "She points at pictures. Dragon! Castle!",
+    "interactions": [
+      {
+        "target": "book",
+        "action": "tap",
+        "effect": "opens with dragon and castle images"
+      },
+      {
+        "target": "dragon",
+        "action": "tap",
+        "effect": "breathes tiny puff of smoke"
+      },
+      {
+        "target": "castle",
+        "action": "tap",
+        "effect": "trumpets sound"
+      },
+      {
+        "target": "language button",
+        "action": "tap",
+        "effect": "repeat-after-me mode"
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "title": "Bathtime",
+    "text": "Splash! Milo gets a little wet too.",
+    "interactions": [
+      {
+        "target": "water",
+        "action": "tap",
+        "effect": "splash animation with sound"
+      },
+      {
+        "target": "soap or sponge",
+        "action": "drag",
+        "effect": "clean"
+      },
+      {
+        "target": "Milo",
+        "action": "tap",
+        "effect": "wet face, says “Oops!”"
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "title": "Bedtime",
+    "text": "Good night, Milo. Good night, Mr. Cat.",
+    "interactions": [
+      {
+        "target": "lamp",
+        "action": "tap",
+        "effect": "dims light"
+      },
+      {
+        "target": "Luna",
+        "action": "tap",
+        "effect": "soft snoring, says 'Good night' in both languages"
+      },
+      {
+        "target": "moon",
+        "action": "tap",
+        "effect": "lullaby music plays"
+      }
+    ]
+  }
+]

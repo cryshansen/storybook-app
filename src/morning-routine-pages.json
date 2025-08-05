@@ -1,0 +1,196 @@
+[
+    {
+    "page": 1,
+    "title": "Morning Wake-up",
+    "text": "Luna wakes up. She stretches. She hugs Milo.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "sun",
+        "action": "riseGlow"
+      },
+      {
+        "type": "tap",
+        "target": "Milo",
+        "action": "gigglesAndSqueaks",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "target": "Word",
+        "action": "hearWord",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "name": "read",
+        "action": "readAloud"
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Breakfast",
+    "text": "Luna eats toast and bananas. Mr. Cat wants some too.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "food",
+        "action": "voiceName"
+      },
+      {
+        "type": "tap",
+        "target": "MrCat",
+        "action": "meowAndShakeHead",
+        "context": "toast"
+      },
+      {
+        "type": "miniGame",
+        "name": "feedBanana",
+        "action": "dragToMouth"
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "Getting Dressed",
+    "text": "She wears her yellow shirt and red boots.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "clothes",
+        "action": "swapColorOrSpeakName"
+      },
+      {
+        "type": "tap",
+        "target": "Luna",
+        "action": "spinAndSpeak",
+        "text": "Ready for adventure!"
+      },
+      {
+        "type": "popup",
+        "name": "learnColors",
+        "trigger": "optional"
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "Outside Ladybug",
+    "text": "Luna finds a ladybug.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "ladybug",
+        "action": "crawlAcrossScreen"
+      },
+      {
+        "type": "tap",
+        "target": "LunaFinger",
+        "action": "giggleAndSpeak",
+        "text": "It tickles!"
+      },
+      {
+        "type": "optionalTool",
+        "name": "magnifyingGlass",
+        "action": "zoomOnBug"
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Blanket Fort",
+    "text": "Luna builds a fort. Mr. Cat naps.",
+    "interactions": [
+      {
+        "type": "drag",
+        "target": "blankets",
+        "action": "buildFort"
+      },
+      {
+        "type": "tap",
+        "target": "MrCat",
+        "action": "snoreSoftly"
+      },
+      {
+        "type": "tap",
+        "target": "Milo",
+        "action": "peekabooFromFort"
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "Reading Time",
+    "text": "She points at pictures. Dragon! Castle!",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "book",
+        "action": "openBook",
+        "reveals": ["dragon", "castle"]
+      },
+      {
+        "type": "tap",
+        "target": "dragon",
+        "action": "puffSmoke"
+      },
+      {
+        "type": "tap",
+        "target": "castle",
+        "action": "playTrumpets"
+      },
+      {
+        "type": "button",
+        "name": "languageRepeat",
+        "action": "repeatAfterMe"
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "title": "Bathtime",
+    "text": "Splash! Milo gets a little wet too.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "water",
+        "action": "splashSoundAndAnimation"
+      },
+      {
+        "type": "drag",
+        "target": "soapOrSponge",
+        "action": "cleanAnimation"
+      },
+      {
+        "type": "tap",
+        "target": "Milo",
+        "action": "wetFaceAndSpeak",
+        "text": "Oops!"
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "title": "Bedtime",
+    "text": "Good night, Milo. Good night, Mr. Cat.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "lamp",
+        "action": "dimLights"
+      },
+      {
+        "type": "tap",
+        "target": "Luna",
+        "action": "snoreAndSayGoodNight",
+        "languages": ["English", "OtherLanguage"]
+      },
+      {
+        "type": "tap",
+        "target": "moon",
+        "action": "playLullaby"
+      }
+    ]
+  }
+]
