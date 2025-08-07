@@ -1,0 +1,74 @@
+[
+  {
+    "page": 1,
+    "title": "Nina's Garden Surprise",
+    "image": "https://via.placeholder.com/400x300?text=Garden+Morning",
+    "text": "Nina woke up early. The sun was shining and her garden waited.",
+    "interactions": [
+      { "type": "tap", "target": "sun", "action": "shineBrighter" },
+      { "type": "tap", "target": "Nina", "action": "stretchAndSmile" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "garden" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Mystery Leaves",
+    "image": "https://via.placeholder.com/400x300?text=Mystery+Leaves",
+    "text": "In the garden, strange leaves peeked from the soil. Nina leaned in close.",
+    "interactions": [
+      { "type": "tap", "target": "leaves", "action": "rustleSound" },
+      { "type": "tap", "target": "soil", "action": "digSlightly" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "mystery" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "The Little Sprout",
+    "image": "https://via.placeholder.com/400x300?text=Sprout+Appears",
+    "text": "A tiny sprout wiggled up! It wasn’t like her other plants.",
+    "interactions": [
+      { "type": "tap", "target": "sprout", "action": "growSlightly" },
+      { "type": "tap", "target": "Nina", "action": "curiousLook" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "sprout" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "The Talking Plant?",
+    "image": "https://via.placeholder.com/400x300?text=Talking+Plant",
+    "text": "“Hello!” the sprout squeaked. Nina jumped. A talking plant?",
+    "interactions": [
+      { "type": "tap", "target": "sprout", "action": "talkingAnimation" },
+      { "type": "tap", "target": "Nina", "action": "surprisedJump" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "talking" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "A Friend From Afar",
+    "image": "https://via.placeholder.com/400x300?text=New+Friend",
+    "text": "The plant's name was Pip. He came from a magic seed, planted by a bird.",
+    "interactions": [
+      { "type": "tap", "target": "Pip", "action": "waveHello" },
+      { "type": "tap", "target": "bird", "action": "flyAcross" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "magic" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "A Garden Full of Magic",
+    "image": "https://via.placeholder.com/400x300?text=Garden+Magic",
+    "text": "From that day on, Nina’s garden grew giggles, songs, and surprises.",
+    "interactions": [
+      { "type": "tap", "target": "plants", "action": "giggleAndSway" },
+      { "type": "tap", "target": "Pip", "action": "singShortTune" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "surprises" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  }
+]

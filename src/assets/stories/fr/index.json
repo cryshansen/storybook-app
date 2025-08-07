@@ -1,0 +1,28 @@
+[
+  {
+    "id": "routine-matinale",
+    "title": "La journée bien remplie de Luna",
+    "coverImage": "/images/morning.png",
+    "description": "Suis Luna tout au long d'une journée pleine de plaisir !"
+  },
+  {
+    "id": "aventure-au-coucher",
+    "title": "L'aventure du coucher",
+    "coverImage": "/images/bedtime.png",
+    "description": "Une histoire du soir réconfortante avec des rêves magiques."
+  },
+  {
+    "id": "la-surprise-de-nina-au-jardin",
+    "title": "La Surprise de Nina au Jardin",
+    "coverImage": "/images/bedtime.png",
+    "description": "Nina découvre une surprise magique en plantant des fleurs dans son jardin. Une douce histoire sur la patience, la croissance et la nature."
+
+  },
+  {
+    "id": "benny-dans-lespace",
+    "title": "Benny dans L'espace",
+    "coverImage": "/images/bedtime.png",
+    "description": "Benny construit une fusée et explore les étoiles avec son chat, Tiko. Un voyage amusant à travers l’espace, la curiosité et l’amitié."
+
+  }
+]

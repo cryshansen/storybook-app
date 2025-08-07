@@ -1,0 +1,68 @@
+[
+  {
+    "page": 1,
+    "title": "Benny dans l’Espace",
+    "image": "https://via.placeholder.com/400x300?text=Fusée+de+Benny",
+    "text": "Benny regarde les étoiles. Il rêve de voyager dans l’espace un jour.",
+    "interactions": [
+      { "type": "tap", "target": "étoiles", "action": "twinkle" },
+      { "type": "tap", "target": "Benny", "action": "lookUp" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Décollage!",
+    "image": "https://via.placeholder.com/400x300?text=Décollage",
+    "text": "La fusée de Benny est prête. « 3, 2, 1... Décollage! »",
+    "interactions": [
+      { "type": "tap", "target": "fusée", "action": "launchRocket" },
+      { "type": "tap", "target": "fumée", "action": "puffSmoke" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "Dans les étoiles",
+    "image": "https://via.placeholder.com/400x300?text=Espace",
+    "text": "Benny flotte dans l’espace. Il voit la Terre devenir toute petite.",
+    "interactions": [
+      { "type": "tap", "target": "Terre", "action": "zoomOut" },
+      { "type": "tap", "target": "Benny", "action": "floatAround" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "Une planète étrange",
+    "image": "https://via.placeholder.com/400x300?text=Planète+bleue",
+    "text": "Il atterrit sur une planète bleue avec des rochers qui brillent!",
+    "interactions": [
+      { "type": "tap", "target": "rochers", "action": "glow" },
+      { "type": "tap", "target": "sol", "action": "dustPuff" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Un ami extraterrestre",
+    "image": "https://via.placeholder.com/400x300?text=Extraterrestre",
+    "text": "Un petit extraterrestre vert s’approche. Il dit : « Bonjour Benny! »",
+    "interactions": [
+      { "type": "tap", "target": "extraterrestre", "action": "wave" },
+      { "type": "tap", "target": "Benny", "action": "sayHello" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "Retour à la maison",
+    "image": "https://via.placeholder.com/400x300?text=Retour+Terre",
+    "text": "Benny rentre chez lui. « À bientôt, mon ami de l’espace! »",
+    "interactions": [
+      { "type": "tap", "target": "fusée", "action": "flyHome" },
+      { "type": "tap", "target": "étoiles", "action": "twinkle" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  }
+]

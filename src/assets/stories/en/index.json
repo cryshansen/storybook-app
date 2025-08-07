@@ -1,0 +1,27 @@
+[
+  {
+    "id": "morning-routine",
+    "title": "Luna's Busy Day",
+    "coverImage": "/images/morning.png",
+    "description": "Follow Luna through a fun-filled day!"
+  },
+  {
+    "id": "bedtime-adventure",
+    "title": "Bedtime Adventure",
+    "coverImage": "/images/bedtime.png",
+    "description": "A cozy bedtime story with magical dreams."
+  },
+  {
+    "id": "ninas-garden-surprise",
+    "title": "Nina's Garden Surprise",
+    "coverImage": "/images/bedtime.png",
+    "description": "Nina discovers a magical surprise while planting flowers in her garden. A sweet story about patience, growth, and nature."
+
+  },
+  {
+    "id": "bennys-blast-to-space",
+    "title": "Benny's Blast to Space",
+    "coverImage": "/images/bedtime.png",
+    "description": "Benny builds a rocket and explores the stars with his cat, Tiko. A fun journey through space, curiosity, and friendship."
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "page": 1,
+    "title": "Heure du Bain",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Bain",
+    "text": "Luna entre dans le bain. L'eau est chaude. Des bulles flottent.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "bulles",
+        "action": "éclaterBulles"
+      },
+      {
+        "type": "tap",
+        "target": "canard",
+        "action": "couinementCanard",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "target": "Mot",
+        "action": "entendreMot",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "name": "lire",
+        "action": "lectureVoixHaute"
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Pyjama Douillet",
+    "image": "https://via.placeholder.com/400x300?text=Pyjama+de+Luna",
+    "text": "Luna met son pyjama. Il est doux et chaud.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "pyjama",
+        "action": "frotterPyjama"
+      },
+      {
+        "type": "tap",
+        "target": "Mot",
+        "action": "entendreMot",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "name": "lire",
+        "action": "lectureVoixHaute"
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "L’histoire du Soir",
+    "image": "https://via.placeholder.com/400x300?text=Histoire+du+Soir",
+    "text": "Papa lit une histoire à Luna. Milo écoute aussi.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "livre",
+        "action": "tournerPage"
+      },
+      {
+        "type": "tap",
+        "target": "Milo",
+        "action": "sourireMilo",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "target": "Mot",
+        "action": "entendreMot",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "name": "lire",
+        "action": "lectureVoixHaute"
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "Bonne Nuit",
+    "image": "https://via.placeholder.com/400x300?text=Bonne+Nuit+Luna",
+    "text": "Luna ferme les yeux. Les étoiles brillent. Bonne nuit, Luna.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "lumière",
+        "action": "atténuerLumière"
+      },
+      {
+        "type": "tap",
+        "target": "étoiles",
+        "action": "brillerÉtoiles",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "target": "Mot",
+        "action": "entendreMot",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "name": "lire",
+        "action": "lectureVoixHaute"
+      }
+    ]
+  }
+]

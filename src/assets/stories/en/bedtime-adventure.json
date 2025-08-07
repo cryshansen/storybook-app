@@ -1,0 +1,176 @@
+[
+  {
+    "page": 1,
+    "title": "Luna Gets Sleepy",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Gets+Sleepy",
+    "text": "The sky turns orange. Luna yawns. It’s time to get ready for bed.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "sky",
+        "action": "fadeToNight"
+      },
+      {
+        "type": "tap",
+        "target": "Luna",
+        "action": "yawnAndStretch"
+      },
+      {
+        "type": "tap",
+        "target": "Word",
+        "action": "hearWord",
+        "context": "bed"
+      },
+      {
+        "type": "tap",
+        "name": "read",
+        "action": "readAloud"
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Bath Time Fun",
+    "image": "https://via.placeholder.com/400x300?text=Bath+Time",
+    "text": "Splish splash! Luna plays with her rubber duck. The bubbles tickle her nose.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "duck",
+        "action": "squeak"
+      },
+      {
+        "type": "tap",
+        "target": "bubbles",
+        "action": "popAndLaugh"
+      },
+      {
+        "type": "tap",
+        "target": "Word",
+        "action": "hearWord",
+        "context": "bubble"
+      },
+      {
+        "type": "tap",
+        "name": "read",
+        "action": "readAloud"
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "Pajamas and Hugs",
+    "image": "https://via.placeholder.com/400x300?text=Pajama+Time",
+    "text": "Luna puts on her cozy pajamas. Milo gives her a big bear hug.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "pajamas",
+        "action": "glowWarm"
+      },
+      {
+        "type": "tap",
+        "target": "Milo",
+        "action": "hugAnimation"
+      },
+      {
+        "type": "tap",
+        "target": "Word",
+        "action": "hearWord",
+        "context": "cozy"
+      },
+      {
+        "type": "tap",
+        "name": "read",
+        "action": "readAloud"
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "Story Time",
+    "image": "https://via.placeholder.com/400x300?text=Story+Time",
+    "text": "Luna snuggles in bed. Mama reads her a story about stars and space.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "book",
+        "action": "flipPage"
+      },
+      {
+        "type": "tap",
+        "target": "stars",
+        "action": "twinkle"
+      },
+      {
+        "type": "tap",
+        "target": "Word",
+        "action": "hearWord",
+        "context": "story"
+      },
+      {
+        "type": "tap",
+        "name": "read",
+        "action": "readAloud"
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Goodnight Wishes",
+    "image": "https://via.placeholder.com/400x300?text=Goodnight",
+    "text": "Luna whispers goodnight to her toys. The room gets quiet and still.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "toys",
+        "action": "waveGoodnight"
+      },
+      {
+        "type": "tap",
+        "target": "lamp",
+        "action": "dimLight"
+      },
+      {
+        "type": "tap",
+        "target": "Word",
+        "action": "hearWord",
+        "context": "quiet"
+      },
+      {
+        "type": "tap",
+        "name": "read",
+        "action": "readAloud"
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "Sweet Dreams",
+    "image": "https://via.placeholder.com/400x300?text=Sweet+Dreams",
+    "text": "Luna closes her eyes. Milo cuddles close. Stars sparkle in her dreams.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "Luna",
+        "action": "slowBlink"
+      },
+      {
+        "type": "tap",
+        "target": "stars",
+        "action": "sparkleLoop"
+      },
+      {
+        "type": "tap",
+        "target": "Word",
+        "action": "hearWord",
+        "context": "dreams"
+      },
+      {
+        "type": "tap",
+        "name": "read",
+        "action": "readAloud"
+      }
+    ]
+  }
+]

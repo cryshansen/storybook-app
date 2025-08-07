@@ -1,0 +1,204 @@
+[
+  {
+    "page": 1,
+    "title": "Réveil du Matin",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
+    "text": "Luna se réveille. Elle s'étire. Elle serre Milo dans ses bras.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "sun",
+        "action": "riseGlow"
+      },
+      {
+        "type": "tap",
+        "target": "Milo",
+        "action": "gigglesAndSqueaks",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "target": "Word",
+        "action": "hearWord",
+        "context": "toast"
+      },
+      {
+        "type": "tap",
+        "name": "read",
+        "action": "readAloud"
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Petit Déjeuner",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
+    "text": "Luna mange du pain grillé et des bananes. M. Chat en veut aussi.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "food",
+        "action": "voiceName"
+      },
+      {
+        "type": "tap",
+        "target": "MrCat",
+        "action": "meowAndShakeHead",
+        "context": "toast"
+      },
+      {
+        "type": "miniGame",
+        "name": "feedBanana",
+        "action": "dragToMouth"
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "S'habiller",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
+    "text": "Elle porte sa chemise jaune et ses bottes rouges.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "clothes",
+        "action": "swapColorOrSpeakName"
+      },
+      {
+        "type": "tap",
+        "target": "Luna",
+        "action": "spinAndSpeak",
+        "text": "Prête pour l'aventure !"
+      },
+      {
+        "type": "popup",
+        "name": "learnColors",
+        "trigger": "optional"
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "La Coccinelle",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
+    "text": "Luna trouve une coccinelle.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "ladybug",
+        "action": "crawlAcrossScreen"
+      },
+      {
+        "type": "tap",
+        "target": "LunaFinger",
+        "action": "giggleAndSpeak",
+        "text": "Ça chatouille !"
+      },
+      {
+        "type": "optionalTool",
+        "name": "magnifyingGlass",
+        "action": "zoomOnBug"
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Cabane de Couvertures",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
+    "text": "Luna construit une cabane. M. Chat fait la sieste.",
+    "interactions": [
+      {
+        "type": "drag",
+        "target": "blankets",
+        "action": "buildFort"
+      },
+      {
+        "type": "tap",
+        "target": "MrCat",
+        "action": "snoreSoftly"
+      },
+      {
+        "type": "tap",
+        "target": "Milo",
+        "action": "peekabooFromFort"
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "L'Heure de Lire",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
+    "text": "Elle montre des images. Dragon ! Château !",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "book",
+        "action": "openBook",
+        "reveals": ["dragon", "castle"]
+      },
+      {
+        "type": "tap",
+        "target": "dragon",
+        "action": "puffSmoke"
+      },
+      {
+        "type": "tap",
+        "target": "castle",
+        "action": "playTrumpets"
+      },
+      {
+        "type": "button",
+        "name": "languageRepeat",
+        "action": "repeatAfterMe"
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "title": "L'heure du Bain",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
+    "text": "Splash ! Milo est un peu mouillé aussi.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "water",
+        "action": "splashSoundAndAnimation"
+      },
+      {
+        "type": "drag",
+        "target": "soapOrSponge",
+        "action": "cleanAnimation"
+      },
+      {
+        "type": "tap",
+        "target": "Milo",
+        "action": "wetFaceAndSpeak",
+        "text": "Oups !"
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "title": "Heure du Coucher",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
+    "text": "Bonne nuit, Milo. Bonne nuit, M. Chat.",
+    "interactions": [
+      {
+        "type": "tap",
+        "target": "lamp",
+        "action": "dimLights"
+      },
+      {
+        "type": "tap",
+        "target": "Luna",
+        "action": "snoreAndSayGoodNight",
+        "languages": ["English", "OtherLanguage"]
+      },
+      {
+        "type": "tap",
+        "target": "moon",
+        "action": "playLullaby"
+      }
+    ]
+  }
+]

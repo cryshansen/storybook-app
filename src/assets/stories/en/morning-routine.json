@@ -2,35 +2,46 @@
     {
     "page": 1,
     "title": "Morning Wake-up",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
     "text": "Luna wakes up. She stretches. She hugs Milo.",
     "interactions": [
       {
         "type": "tap",
         "target": "sun",
-        "action": "riseGlow"
+        "action": "riseGlow",
+        "top": "60%", 
+        "left": "30%"
       },
       {
         "type": "tap",
         "target": "Milo",
         "action": "gigglesAndSqueaks",
-        "context": "toast"
+        "context": "toast",
+        "top": "20%", 
+        "left": "50%"
+
       },
       {
         "type": "tap",
         "target": "Word",
         "action": "hearWord",
-        "context": "toast"
+        "context": "toast",
+        "top": "40%", 
+        "left": "60%"
       },
       {
         "type": "tap",
         "name": "read",
-        "action": "readAloud"
+        "action": "readAloud",
+        "top": "20%", 
+        "left": "70%"
       }
     ]
   },
   {
     "page": 2,
     "title": "Breakfast",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
     "text": "Luna eats toast and bananas. Mr. Cat wants some too.",
     "interactions": [
       {
@@ -54,6 +65,7 @@
   {
     "page": 3,
     "title": "Getting Dressed",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
     "text": "She wears her yellow shirt and red boots.",
     "interactions": [
       {
@@ -77,6 +89,7 @@
   {
     "page": 4,
     "title": "Outside Ladybug",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
     "text": "Luna finds a ladybug.",
     "interactions": [
       {
@@ -100,6 +113,7 @@
   {
     "page": 5,
     "title": "Blanket Fort",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
     "text": "Luna builds a fort. Mr. Cat naps.",
     "interactions": [
       {
@@ -122,6 +136,7 @@
   {
     "page": 6,
     "title": "Reading Time",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
     "text": "She points at pictures. Dragon! Castle!",
     "interactions": [
       {
@@ -150,6 +165,7 @@
   {
     "page": 7,
     "title": "Bathtime",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
     "text": "Splash! Milo gets a little wet too.",
     "interactions": [
       {
@@ -173,6 +189,7 @@
   {
     "page": 8,
     "title": "Bedtime",
+    "image": "https://via.placeholder.com/400x300?text=Luna+Wakes+Up",
     "text": "Good night, Milo. Good night, Mr. Cat.",
     "interactions": [
       {

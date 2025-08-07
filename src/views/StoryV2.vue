@@ -1,13 +1,9 @@
 
 
-// 5. Story.vue
+// 5. StoryV2.vue
 <template>
-  <header class="back-header my-5">
-    <router-link to="/" class="text-decoration-none text-dark">⬅️ Back to Home</router-link>
-  </header>
- 
   <div v-if="storyData.length">
-    <StoryPage :page="currentPage" />
+   <StoryPage :page="currentPage" :language="language" @update:language="onLanguageChange" />
 
     <div class="mt-3 d-flex justify-content-between">
       <button class="btn btn-secondary" @click="prevPage" :disabled="currentPageIndex === 0">Previous</button>
@@ -20,8 +16,8 @@
 </template>
 
 <script>
-import { ref, onMounted, computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, onMounted, computed, watch } from 'vue'
+import { useRoute, userRouter } from 'vue-router'
 import StoryPage from '../components/StoryPage.vue'
 
 export default {
@@ -29,24 +25,26 @@ export default {
   components: { StoryPage },
   setup() {
     const route = useRoute()
+    const router = userRouter()
     const storyId = route.params.id
-    const lang = route.query.lang || 'en'
+    const lang = ref(route.query.lang || 'en')
     const storyData = ref([]) // full story array
     const currentPageIndex = ref(0) // track which page we are on
 
-    
-    onMounted(async () => {
+    const loadStory(async () => {
       try {
         const langFolder = lang === 'fr' ? 'fr' : 'en'
-        console.log(`/src/assets/stories/${langFolder}/${storyId}.json`)
         const res = await fetch(`/src/assets/stories/${langFolder}/${storyId}.json`)
         storyData.value = await res.json()
-        console.log( storyData.value )
       } catch (err) {
-        console.error('Failed to load story: "${slug}" :: ', err)
-         console.log( storyData.value )
+        console.error('Failed to load story:', err)
       }
     })
+
+    const onLanguageChange = (newLang) => {
+      language.value = newLang
+      router.replace({ path: `/story/${storyId}`, query: { lang: newLang } })
+    }
 
     const currentPage = computed(() => storyData.value[currentPageIndex.value])
 
@@ -67,7 +65,9 @@ export default {
       currentPage,
       currentPageIndex,
       nextPage,
-      prevPage
+      prevPage,
+      language,
+      onLanguageChange
     }
   }
 }

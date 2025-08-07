@@ -1,0 +1,68 @@
+[
+  {
+    "page": 1,
+    "title": "La Surprise de Nina au Jardin",
+    "image": "https://via.placeholder.com/400x300?text=Nina+dans+le+Jardin",
+    "text": "C’est le printemps! Nina enfile ses bottes et court vers le jardin avec son arrosoir rose.",
+    "interactions": [
+      { "type": "tap", "target": "Nina", "action": "waveHello" },
+      { "type": "tap", "target": "arrosoir", "action": "pourWater" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "De petites pousses vertes",
+    "image": "https://via.placeholder.com/400x300?text=Pousses+vertes",
+    "text": "Nina remarque de petites pousses vertes dans la terre. « Que se passe-t-il ici? » se demande-t-elle.",
+    "interactions": [
+      { "type": "tap", "target": "pousses", "action": "growSlightly" },
+      { "type": "tap", "target": "terre", "action": "wiggleSoil" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "Le chant du papillon",
+    "image": "https://via.placeholder.com/400x300?text=Papillon",
+    "text": "Un papillon coloré vole autour de Nina. Il semble danser au-dessus des fleurs.",
+    "interactions": [
+      { "type": "tap", "target": "papillon", "action": "flutterAround" },
+      { "type": "tap", "target": "fleurs", "action": "bloom" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "Une petite boîte cachée",
+    "image": "https://via.placeholder.com/400x300?text=Boîte+enterrée",
+    "text": "Près d’un buisson, Nina voit une petite boîte à moitié cachée. Elle la déterre doucement.",
+    "interactions": [
+      { "type": "tap", "target": "boîte", "action": "shakeGently" },
+      { "type": "tap", "target": "buisson", "action": "rustleLeaves" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Un message secret",
+    "image": "https://via.placeholder.com/400x300?text=Message+secret",
+    "text": "À l’intérieur de la boîte, Nina trouve un message. Il est écrit : « Merci de prendre soin du jardin. »",
+    "interactions": [
+      { "type": "tap", "target": "message", "action": "revealText" },
+      { "type": "tap", "target": "coeur", "action": "glowHeart" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "Un sourire au soleil",
+    "image": "https://via.placeholder.com/400x300?text=Nina+heureuse",
+    "text": "Nina sourit. Le soleil brille et les fleurs s’épanouissent. Quelle belle surprise dans son jardin!",
+    "interactions": [
+      { "type": "tap", "target": "soleil", "action": "shineBrighter" },
+      { "type": "tap", "target": "Nina", "action": "smile" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  }
+]

@@ -4,7 +4,7 @@ import Story from '../views/Story.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/story/:id', name: 'Story', component: Story, props: true },
+  { path: '/story/:id', name: 'Story', component: Story, props: route => ({ id: route.params.id }) },
 ]
 
 const router = createRouter({

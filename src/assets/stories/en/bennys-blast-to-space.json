@@ -1,0 +1,74 @@
+[
+  {
+    "page": 1,
+    "title": "Benny Blasts to Space",
+    "image": "https://via.placeholder.com/400x300?text=Benny+Dreams+Big",
+    "text": "Benny loved the stars. He dreamed of flying to the moon.",
+    "interactions": [
+      { "type": "tap", "target": "stars", "action": "twinkleEffect" },
+      { "type": "tap", "target": "Benny", "action": "lookUp" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "moon" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Building the Rocket",
+    "image": "https://via.placeholder.com/400x300?text=Rocket+Build",
+    "text": "With cardboard, tape, and dreams, Benny built his rocket.",
+    "interactions": [
+      { "type": "tap", "target": "rocket", "action": "sparkleBuild" },
+      { "type": "tap", "target": "tape", "action": "peelSound" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "rocket" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "Countdown Begins",
+    "image": "https://via.placeholder.com/400x300?text=Countdown",
+    "text": "“3… 2… 1… Blast off!” Benny zoomed into the sky.",
+    "interactions": [
+      { "type": "tap", "target": "rocket", "action": "launchAnimation" },
+      { "type": "tap", "target": "clouds", "action": "moveAside" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "blast" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "A Starry Adventure",
+    "image": "https://via.placeholder.com/400x300?text=In+Space",
+    "text": "Stars zoomed by. Benny waved at planets and spotted a comet!",
+    "interactions": [
+      { "type": "tap", "target": "comet", "action": "streakAcross" },
+      { "type": "tap", "target": "planets", "action": "orbitAnimation" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "comet" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Alien Encounter",
+    "image": "https://via.placeholder.com/400x300?text=Alien+Friend",
+    "text": "A tiny alien waved hello. Benny shared a space snack.",
+    "interactions": [
+      { "type": "tap", "target": "alien", "action": "waveBack" },
+      { "type": "tap", "target": "snack", "action": "floatAround" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "alien" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "Back to Earth",
+    "image": "https://via.placeholder.com/400x300?text=Earth+Return",
+    "text": "Benny zoomed home. His dreams were now memories among the stars.",
+    "interactions": [
+      { "type": "tap", "target": "rocket", "action": "reenterEarth" },
+      { "type": "tap", "target": "Benny", "action": "smileBig" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "memories" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  }
+]

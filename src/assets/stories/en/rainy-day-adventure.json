@@ -1,0 +1,68 @@
+[
+  {
+    "page": 1,
+    "title": "Rain, Rain!",
+    "image": "https://via.placeholder.com/400x300?text=Rainy+Window",
+    "text": "Raindrops tap the window. Milo can’t play outside today.",
+    "interactions": [
+      { "type": "tap", "target": "window", "action": "raindropSound" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "raindrops" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Time for a Fort!",
+    "image": "https://via.placeholder.com/400x300?text=Blanket+Fort",
+    "text": "Milo builds a cozy fort using blankets and chairs.",
+    "interactions": [
+      { "type": "tap", "target": "fort", "action": "buildFort" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "blankets" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "A Stormy Story",
+    "image": "https://via.placeholder.com/400x300?text=Reading+in+Fort",
+    "text": "He reads a story about a pirate ship in a storm!",
+    "interactions": [
+      { "type": "tap", "target": "book", "action": "openBook" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "pirate" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "Snack Time",
+    "image": "https://via.placeholder.com/400x300?text=Snack+Tray",
+    "text": "Milo brings a snack to his fort: apples and cheese!",
+    "interactions": [
+      { "type": "tap", "target": "snack", "action": "eatSound" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "cheese" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Thunder Boom!",
+    "image": "https://via.placeholder.com/400x300?text=Lightning+Flash",
+    "text": "Boom! A loud thunderclap makes Milo jump!",
+    "interactions": [
+      { "type": "tap", "target": "cloud", "action": "thunderEffect" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "thunder" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "Safe and Dry",
+    "image": "https://via.placeholder.com/400x300?text=Fort+Night",
+    "text": "The storm passes. Milo is warm and safe in his fort.",
+    "interactions": [
+      { "type": "tap", "target": "lamp", "action": "lightGlow" },
+      { "type": "tap", "target": "Word", "action": "hearWord", "context": "safe" },
+      { "type": "tap", "name": "read", "action": "readAloud" }
+    ]
+  }
+]
